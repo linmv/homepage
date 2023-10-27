@@ -1,0 +1,4 @@
+# Folders to be ignored
+node_modules
+build
+.idea

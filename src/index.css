@@ -1,0 +1,101 @@
+:root {
+    --main-color: #6BD2F9;
+    --dark-grey: #524848;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: var(--dark-grey);
+}
+
+.icon {
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon-bg {
+    position: absolute;
+    width: 200px;
+    z-index: 0;
+}
+
+#backToTop img {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 20px;
+}
+
+.paths {
+    stroke: #524848;
+    stroke-dasharray: 10;
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.mask {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 10;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: dash 8s linear infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.planePath {
+    offset-path: path("M1 1C246.127 1.84174 466 121.125 357 211.5C248 301.875 67.3119 246 37.769 360.5C8.22614 475 271.426 502 306.341 609.5C341.255 717 239.869 786 239.869 786");
+    offset-distance: 100%; /* end position */
+    animation: movePath 8s linear infinite;
+}
+
+@keyframes movePath {
+    0% { /* start point */
+        offset-distance: 0;
+    }
+    100% { /* end point */
+        offset-distance: 100%;
+    }
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    padding-top: 70px;
+    /*scroll-snap-align: start;*/
+    scroll-snap-stop: always;
+}
+
+.rowStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  /* horizontally */
+    align-items: center; /* vertically */
+    height: 250px;
+}
+
+.colStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.mediaContainerWidth {
+    width: 450px;
+}
