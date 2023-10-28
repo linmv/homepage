@@ -5,10 +5,7 @@ import {motion} from "framer-motion"
 function AboutMe() {
     return (
         <div className={"rowStyle"}>
-            <div style={{position: "relative"}}>
-                <img src={"./images/watercolor_paint_brush.png"} alt={"logo background"} className={"icon-bg"}/>
-                <img src={"./images/icon4.png"} alt={"logo"} className={"icon"}/>
-            </div>
+            <img src={"./images/icon_bg.png"} alt={"avatar"} style={{maxWidth: "300px", width: "auto"}}/>
             <div>
                 <h3 className={`text-center`}>About Me</h3>
                 <p className={`text-center`}> Hello and welcome to my world. I am Michelle, I am currently

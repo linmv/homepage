@@ -28,6 +28,7 @@ class App extends React.Component {
 function Home() {
     return (<div className={"scroll-container"}>
         <NavBar/>
+        <div id={"home"} />
 
         <section id="quoteOTD" style={{paddingTop: "90px"}}>
             <FetchQuote/>
@@ -45,7 +46,7 @@ function Home() {
             <Contact/>
         </section>
 
-        <div id="backToTop"><a href="#" target="_self"><img src="./images/1057133.png" alt="Top"/></a></div>
+        <div id="backToTop"><a href="#home" target="_self"><img src="./images/up.png" alt="Top"/></a></div>
 
     </div>)
 }
