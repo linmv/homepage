@@ -88,3 +88,12 @@ section {
 .mediaContainerWidth {
     width: 450px;
 }
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+}

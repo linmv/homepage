@@ -1,34 +1,37 @@
 import ReactDOM from 'react-dom/client'
-import React, {useEffect, useState} from 'react'
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-import {useSpring} from "@react-spring/web";
+import React, {useState} from 'react'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {useLocation} from 'react-router-dom'
 import NavBar from './navBar'
 import FetchQuote from './quote'
 import AboutMe from './aboutMe'
 import Project from './project'
 import Contact from './contact'
+import SplashScreen from "./splash"
 import "./index.css"
-import {motion} from "framer-motion"
 
 class App extends React.Component {
     render() {
-        return (<BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path="/project" element={<Project/>}/>
-                <Route path="/path" element={<Path/>}/>
-                <Route path="*" element={<NoMatch/>}/>
-            </Routes>
-        </BrowserRouter>)
+        return (
+            <div style={{overflow: 'hidden'}}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<SplashScreen/>}/>
+                        <Route path="/home" element={<Home/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/project" element={<Project/>}/>
+                        <Route path="/path" element={<Path/>}/>
+                        <Route path="*" element={<NoMatch/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </div>
+        )
     }
 }
 
 function Home() {
-    return (<div className={"scroll-container"}>
+    return (<div>
         <NavBar/>
-        <div id={"home"} />
 
         <section id="quoteOTD" style={{paddingTop: "90px"}}>
             <FetchQuote/>
@@ -46,7 +49,7 @@ function Home() {
             <Contact/>
         </section>
 
-        <div id="backToTop"><a href="#home" target="_self"><img src="./images/up.png" alt="Top"/></a></div>
+        <div id="backToTop"><a href="#" target="_self"><img src="./images/up.png" alt="Top"/></a></div>
 
     </div>)
 }

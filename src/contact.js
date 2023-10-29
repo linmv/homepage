@@ -36,7 +36,7 @@ function Contact() {
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
                               name="message"></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary my-2">Submit</button>
+                <button type="submit" className="btn btn-info my-2" style={{outlineColor: "var(--main-color)", backgroundColor: "var(--main-color)"}}>Submit</button>
             </form>
         </div>
     )

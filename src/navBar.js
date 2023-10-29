@@ -14,7 +14,7 @@ function NavBar() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <a className="navbar-brand" style={{marginLeft: "15px"}}>Michelle Lin </a>
-                    <a className="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a className="nav-link active" aria-current="page" href="#">Home</a>
                     <a className="nav-link active" href="#project">Projects</a>
                     <a className="nav-link active" href="#contact">Contact</a>
                 </div>
