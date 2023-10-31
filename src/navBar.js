@@ -13,11 +13,14 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="navbar-brand" style={{marginLeft: "15px"}}>Michelle Lin </a>
+                    <a className="nav-link disabled px-3" style={{color: "black"}}>Michelle Lin </a>
                     <a className="nav-link active" aria-current="page" href="#">Home</a>
                     <a className="nav-link active" href="#project">Projects</a>
                     <a className="nav-link active" href="#contact">Contact</a>
                 </div>
+                <a className={"d-flex px-2"} href="https://github.com/linmv/homepage" target="_blank" rel="noreferrer nofollow">
+                    <img src={"./images/github_black.png"} width="25" height="25" alt="github logo"/>
+                </a>
             </div>
         </nav>
     );
