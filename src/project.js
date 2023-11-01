@@ -21,7 +21,7 @@ const projectData = [
     },
     {
         title: 'Find Tutor',
-        description: 'This platform for private tutoring matching between tutors and students',
+        description: 'Platform for private tutoring matching between tutors and students',
         media: P2Demo,
         mediaType: 'video/mp4',
     },
@@ -35,12 +35,12 @@ function ProjectItem({title, description, media, mediaType}) {
         if (inView) {
             controls.start({x: 0});
         } else {
-            controls.start({x: -1000});
+            controls.start({x: -200});
         }
     }, [controls, inView]);
 
     return (
-        <motion.div className="rowStyle" ref={ref} initial={{x: -1000}} animate={controls}>
+        <motion.div className="rowStyle" ref={ref} initial={{x: -200}} animate={controls}>
             <div className={'mediaContainerWidth'}>
                 {mediaType.startsWith('video') ? (
                     <video width="100%" height="auto" controls preload="true" muted autoPlay={false}>
