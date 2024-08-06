@@ -1,4 +1,4 @@
-import P1Demo from "./project1_demo.mkv"
+import P1Demo from "./project1_demo.mp4"
 import P2Demo from "./project2_demo.mp4"
 import React from "react"
 import {motion} from "framer-motion"
