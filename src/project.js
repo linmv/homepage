@@ -14,7 +14,7 @@ const projectData = [
         mediaType: 'video/mp4',
     },
     {
-        title: 'Cultural Programmes Data Extraction and Optimization System',
+        title: 'Optimised Cultural Programmes Data Query System',
         description: 'Data Crawler and Visualizer with searching and personalization',
         media: './images/p3.png',
         mediaType: 'image/png',
