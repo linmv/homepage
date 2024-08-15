@@ -8,13 +8,13 @@ import {useAnimation} from 'framer-motion'
 
 const projectData = [
     {
-        title: 'Real time library seat availability system',
+        title: 'Intelligent Library Seat Management Platform',
         description: 'Seat Occupancy Detection with Image Recognition',
         media: P1Demo,
         mediaType: 'video/mp4',
     },
     {
-        title: 'LCSD Cultural Programmes',
+        title: 'Cultural Programmes Data Extraction and Optimization System',
         description: 'Data Crawler and Visualizer with searching and personalization',
         media: './images/p3.png',
         mediaType: 'image/png',
