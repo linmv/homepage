@@ -8,9 +8,7 @@ function AboutMe() {
             <img src={"./images/icon_bg.png"} alt={"avatar"} style={{maxWidth: "300px", width: "auto"}}/>
             <div>
                 <h3 className={`text-center`}>About Me</h3>
-                <p className={`text-center`}> Hello and welcome to my world. I am Michelle, A fresh graduate aspired to
-                    use my communication, analytical and technical skills to provide a friendly, seamless, convenient
-                    user experience to end user and to bring positive changes to application participated. </p>
+                <p className={`text-center`}> Hello and welcome to my world. I am Michelle, an enthusiastic and self-motivated fresh graduate aspired to be a user-focused developer by leveraging my technical, analytical and communication skills to create applications that offer a seamless and convenient user experience. </p>
             </div>
         </div>
     );
