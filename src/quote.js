@@ -19,7 +19,7 @@ function FetchQuote() {
     };
 
     function getQuote() {
-        fetch("https://api.quotable.io/random?tags=Inspirational|Motivational|Work")
+        fetch("https://api.quotable.io/random?tags=Inspirational|Motivational|Work?maxLength=130")
             .then(res => res.json())
             .then((quote) => {
                 setQuote(quote.content);
