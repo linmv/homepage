@@ -2,8 +2,10 @@ import React, {useEffect, useState} from "react"
 import "./index.css"
 
 function FetchQuote() {
-    const [quote, setQuote] = useState("");
-    const [author, setAuthor] = useState("");
+    // const [quote, setQuote] = useState("");
+    // const [author, setAuthor] = useState("");
+    const quote = "Anything that gets your blood racing is probably worth doing";
+    const author = "Hunter S. Thompson";
 
     const quoteBg = {
         position: 'relative', textAlign: 'center', width: '70%', height: '150%', left: '15%'
@@ -18,27 +20,25 @@ function FetchQuote() {
         padding: '5px',
     };
 
-    function getQuote() {
-        fetch("http://api.quotable.io/random?tags=Inspirational|Motivational|Work?maxLength=130")
-            .then(res => res.json())
-            .then((quote) => {
-                setQuote(quote.content);
-                setAuthor(quote.author);
-            })
-    }
+    // function getQuote() {
+    //     fetch("http://api.quotable.io/random?tags=Inspirational|Motivational|Work?maxLength=130")
+    //         .then(res => res.json())
+    //         .then((quote) => {
+    //             setQuote(quote.content);
+    //             setAuthor(quote.author);
+    //         })
+    // }
 
-    //database
-
-    useEffect(() => {
-        getQuote();
-        const intervalID = setInterval(() => {
-            getQuote()
-            // }, 24 * 60 * 60 * 1000);
-        }, 60 * 60 * 1000);
-        return () => {
-            clearInterval(intervalID);
-        }
-    }, [])
+    // useEffect(() => {
+    //     getQuote();
+    //     const intervalID = setInterval(() => {
+    //         getQuote()
+    //         // }, 24 * 60 * 60 * 1000);
+    //     }, 60 * 60 * 1000);
+    //     return () => {
+    //         clearInterval(intervalID);
+    //     }
+    // }, [])
 
     return (<div className="image-container" style={quoteBg}>
             <img
